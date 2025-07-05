@@ -1,57 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/*  Dark Mode Styling  */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+body.dark-mode .hero {
+  background-color: #0d47a1;
+  color: #ffffff;
 }
 
-.hero {
-  background-color: #87A687;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
 }
 
-.container {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 0 20px;
+body.dark-mode .card h2 {
+  color: #90caf9;
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 25px;
-  margin-bottom: 25px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+body.dark-mode .skills span {
+  background-color: #263238;
+  color: #90caf9;
 }
 
-.card h2 {
-  color: #1a237e;
-  margin-bottom: 15px;
-  font-size: 22px;
+body.dark-mode a {
+  color: #64b5f6;
 }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+body.dark-mode footer {
+  background-color: #2c2c2c;
+  color: #bbb;
 }
 
-.skills span {
-  background-color: #e3f2fd;
-  color: #1a237e;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-weight: 500;
-  font-size: 14px;
+body.dark-mode .mode-toggle {
+  background-color: #424242;
+  color: #fff;
 }
 
+/*  Responsive Design  */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .skills span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
 ul {
   padding-left: 20px;
   line-height: 1.6;
